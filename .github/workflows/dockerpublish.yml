@@ -21,8 +21,9 @@ jobs:
   # Run tests.
   # See also https://docs.docker.com/docker-hub/builds/automated-testing/
   test:
-    runs-on: ubuntu-latest
-
+    name:Test on java eureka  ${{ matrix.os }}
+     runs-on:windows-latest
+ 
     steps:
       - uses: actions/checkout@v2
 
